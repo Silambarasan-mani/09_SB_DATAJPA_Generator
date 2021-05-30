@@ -16,7 +16,7 @@ public class Application {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		
 		OrderRepository repository = run.getBean(OrderRepository.class);
-		
+		System.out.println("For jenkin test purpose");
 		OrderEntity st = new OrderEntity();
 		st.setOrdBy("moviya");
 		st.setOrdDate(new Date());
